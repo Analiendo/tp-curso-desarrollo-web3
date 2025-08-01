@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
 body {
   height: 100vh;
+  width: 100%;
 }
 
 section {
@@ -15,14 +15,16 @@ section {
   gap: 10px;
 }
 
-.chat-actions {
-  width: 100%;
-  display: flex;
+main {
+  width: 1000px;
+}
 
+.chat-actions {
+
+  display: flex;
   justify-content: end;
   gap: 15px;
   padding: 20px;
-
 }
 
 h3 {
@@ -30,28 +32,32 @@ h3 {
 }
 
 .chat-header {
+  display: flex;
   padding: 20px;
   display: flex;
   width: 100%;
   gap: 10px;
   align-content: center;
-
-
 }
 
 img {
   width: 25px;
-
 }
 
 .contact-list {
-
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
   margin: 20px;
-  text-decoration: none;
 
+
+
+}
+
+li {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 80%;
 }
 
 button {
@@ -60,7 +66,7 @@ button {
 }
 
 p {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .search {
@@ -71,7 +77,7 @@ p {
   width: 95%;
   border-radius: 5%;
   border-width: 0.5px;
-  border color: grey;
+  border-color: grey;
   color: grey;
   margin-top: 15px
 }
@@ -82,22 +88,26 @@ p {
   height: 80%;
   flex-direction: column;
   margin-bottom: 10px;
+  display: flex;
+
 }
 
 
 .message-sent {
-  flex-direction: column;
+  display: flex;
   width: 100%;
   justify-content: end;
-  gap: 20px;
+  align-items: end;
+  gap: 15p;
   padding: 20px;
   background-color: #E4F2F7
 }
 
 .message-received {
+  display: flex;
   flex-direction: column;
   width: 100%;
-  justify content: start;
+  justify-content: start;
   gap: 15px;
   padding: 20px;
   background-color: #EDEDED;
@@ -113,4 +123,9 @@ input {
   background-color: #EFEFEF;
   border-radius: 10px;
   margin: 0px;
+}
+
+.timestamp {
+  color: grey;
+  font-size: 12px;
 }
