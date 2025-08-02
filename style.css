@@ -99,22 +99,33 @@ h4 {
 
 
 .message-sent {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-  align-items: end;
+
+
+  width: 40%;
+  margin-bottom: 0px;
+  margin-left: auto;
   gap: 15p;
-  padding: 20px;
-  background-color: #E4F2F7
+  padding: 10px;
+  background-color: #e4f2f7;
+  border-radius: 10px
 }
 
-.message-received {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: start;
+.message-received-second {
+  padding-right: 10px;
+  width: 50%;
+  margin-bottom: 0px;
   gap: 15px;
-  padding: 20px;
+  padding: 10px;
+  background-color: #EDEDED;
+  border-radius: 10px
+}
+
+.message-received-first {
+
+  width: 20%;
+  margin-bottom: 0px;
+  gap: 15px;
+  padding: 10px;
   background-color: #EDEDED;
   border-radius: 10px
 }
