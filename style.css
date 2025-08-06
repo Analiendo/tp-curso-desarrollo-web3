@@ -84,7 +84,9 @@ h4 {
   border-width: 0.5px;
   border-color: grey;
   color: grey;
-  margin-top: 15px
+  margin-top: 15px;
+  outline: blue;
+  /: focus/
 }
 
 
@@ -107,7 +109,6 @@ h4 {
   background-color: #e4f2f7;
   border-radius: 10px;
   white-space: nowrap;
-
 }
 
 .message-received-second {
@@ -145,6 +146,30 @@ input {
 }
 
 .timestamp {
-  color: grey;
+  color: gray;
   font-size: 12px;
+}
+
+.status {
+  color: grey;
+  font-size: small;
+}
+
+.status::before {
+  content: "●";
+  margin-right: 0.4rem;
+}
+
+.online::before {
+  color: green;
+}
+
+
+.offline::before {
+  color: red;
+}
+
+.writing {
+  color: gray;
+  font-style: italic;
 }
