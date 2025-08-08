@@ -102,35 +102,46 @@ h4 {
 
 
 .message-sent {
-  width: 38%;
+  margin-top: 12px;
+  width: 380px;
   margin-bottom: 0px;
   margin-left: auto;
   gap: 15p;
-  padding: 7px;
+  padding: 8px;
+  padding-bottom: 0px;
+  padding-top: 10px;
   background-color: #e4f2f7;
   border-radius: 10px;
   white-space: nowrap;
+  line-height: 10px;
+}
+
+
+.message-received-first {
+  width: 155px;
+  margin-bottom: 0px;
+  gap: 15px;
+  padding: 8px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  background-color: #EDEDED;
+  border-radius: 10px;
+  white-space: nowrap;
+  line-height: 10px;
 }
 
 .message-received-second {
-  padding-right: 10px;
-  width: 43%;
-  margin-bottom: 0px;
-  gap: 15px;
-  padding: 7px;
-  background-color: #EDEDED;
-  border-radius: 10px;
-  white-space: nowrap;
-}
 
-.message-received-first {
-  width: 15%;
+  width: 435px;
   margin-bottom: 0px;
   gap: 15px;
-  padding: 7px;
+  padding: 8px;
+  padding-bottom: 0px;
+  padding-top: 10px;
   background-color: #EDEDED;
   border-radius: 10px;
   white-space: nowrap;
+  line-height: 10px;
 }
 
 input {
@@ -189,6 +200,18 @@ textarea:focus {
     display: none;
   }
 
+  .message-sent {
+    width: 375px
+  }
+
+  .message-received-first {
+    width: 160px;
+  }
+
+  .message-received-second {
+    width: 430px;
+  }
+
 }
 
 /*pantalla para celular*/
@@ -197,4 +220,15 @@ textarea:focus {
   .sidebar {
     display: none
   }
+
 }
+}
+
+
+/*modificar bordes, sacar hr/ 
+
+/ver mensajes completos al achicar pantalla para celular y tablet/
+
+ver porque focus no se aplica/
+
+*/
